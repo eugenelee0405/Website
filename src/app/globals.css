@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #B8E3E9;
+  --foreground: #0B2E33;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom prose styling for better contrast */
+.prose {
+  color: #0B2E33;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: #0B2E33;
+}
+
+.prose p {
+  color: #0B2E33;
+}
+
+.prose strong {
+  color: #0B2E33;
+}
+
+.prose li {
+  color: #0B2E33;
+}
+
+.prose ul,
+.prose ol {
+  color: #0B2E33;
+}
+

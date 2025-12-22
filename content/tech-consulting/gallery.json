@@ -1,0 +1,31 @@
+[
+  {
+    "id": "1",
+    "title": "Gaming Build - Mid-Range",
+    "image": "/images/builds/gaming-mid-range.jpg",
+    "specs": [
+      "CPU: AMD Ryzen 5 5600X",
+      "GPU: NVIDIA RTX 3060",
+      "RAM: 16GB DDR4",
+      "Storage: 1TB NVMe SSD",
+      "Motherboard: B550 ATX"
+    ],
+    "date": "2024-01-10",
+    "description": "A well-balanced gaming build optimized for 1080p and 1440p gaming at high settings."
+  },
+  {
+    "id": "2",
+    "title": "Workstation Build - High-End",
+    "image": "/images/builds/workstation-high-end.jpg",
+    "specs": [
+      "CPU: Intel Core i9-13900K",
+      "GPU: NVIDIA RTX 4070",
+      "RAM: 32GB DDR5",
+      "Storage: 2TB NVMe SSD + 4TB HDD",
+      "Motherboard: Z790 ATX"
+    ],
+    "date": "2024-02-15",
+    "description": "A powerful workstation build designed for content creation, video editing, and multitasking."
+  }
+]
+

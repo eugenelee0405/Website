@@ -62,7 +62,7 @@ export default function BuildRequestForm() {
 
       {status === 'success' && (
         <div className="mb-6 p-4 bg-primary-medium text-primary-darkest rounded-lg">
-          Thank you! Your request has been submitted. I'll get back to you soon.
+          Thank you! Your request has been submitted. I&apos;ll get back to you soon.
         </div>
       )}
 
@@ -187,7 +187,7 @@ export default function BuildRequestForm() {
       </form>
 
       <p className="mt-4 text-sm text-primary-darkest">
-        * Required fields. Note: You'll need to configure your Formspree form ID in the component code.
+        * Required fields. Note: You&apos;ll need to configure your Formspree form ID in the component code.
       </p>
     </div>
   );

@@ -23,15 +23,16 @@ export default async function StockPostPage({
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <Link
-        href="/stock-analysis"
-        className="text-primary-dark hover:underline mb-6 inline-block"
-      >
-        ← Back to Stock Analysis
-      </Link>
+    <div className="min-h-screen" style={{ backgroundColor: '#FFFFE3' }}>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <Link
+          href="/stock-analysis"
+          className="text-primary-dark hover:underline mb-6 inline-block"
+        >
+          ← Back to Stock Analysis
+        </Link>
 
-      <article className="bg-primary-light rounded-lg shadow-lg p-8">
+        <article className="rounded-lg shadow-lg p-8" style={{ backgroundColor: '#FFFFE3' }}>
         <div className="flex items-center justify-between mb-6">
           <RatingBadge rating={post.rating} />
           <span className="text-sm text-primary-darkest">
@@ -47,7 +48,8 @@ export default async function StockPostPage({
           className="prose prose-lg dark:prose-invert max-w-none text-primary-darkest prose-headings:text-primary-darkest prose-p:text-primary-darkest prose-strong:text-primary-darkest prose-li:text-primary-darkest"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
-      </article>
+        </article>
+      </div>
     </div>
   );
 }

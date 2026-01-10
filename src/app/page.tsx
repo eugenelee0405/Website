@@ -31,47 +31,40 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-primary-darkest text-primary-light py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Welcome to My Portfolio</h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center bg-primary-light">
+        <div className="max-w-4xl w-full bg-white/90 backdrop-blur-sm shadow-xl rounded-2xl p-12 text-center border border-primary-medium">
+          {/* Name */}
+          <h1 className="text-7xl md:text-8xl font-bold text-primary-darkest mb-6 tracking-tight">
+            Eugene Lee
+          </h1>
+
+          {/* Headline */}
+          <p className="text-xl md:text-2xl text-primary-dark font-medium mb-10 max-w-2xl mx-auto leading-relaxed">
             Exploring stocks, entrepreneurship, sports medicine research, and tech consulting.
           </p>
-        </div>
-      </section>
 
-      {/* About Me Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-primary-darkest">
-            About Me
-          </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+          <div className="w-full h-px bg-primary-medium/30 mb-10"></div>
 
-            {/* Profile Picture Placeholder */}
-            <div className="relative w-48 h-48 flex-shrink-0">
-              {/* 
-                  INSTRUCTIONS FOR USER:
-                  1. Save your photo as "me.jpg" inside the "public/images" folder. 
-                     If the folder doesn't exist, create it.
-                  2. The path will be /images/me.jpg
-               */}
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary-dark shadow-lg bg-gray-200 flex items-center justify-center">
+          {/* Bio & Profile */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-10 text-left">
+            {/* Photo */}
+            <div className="relative shrink-0">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary-dark shadow-lg bg-gray-200">
                 <img
                   src="/images/me.jpg"
-                  alt="Profile Picture (Save your photo to public/images/me.jpg)"
+                  alt="Eugene Lee"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
-            {/* Bio Details */}
-            <div className="max-w-lg text-lg text-primary-darkest space-y-4">
+            {/* Bio Text */}
+            <div className="max-w-lg text-lg text-primary-darkest/90 space-y-4 leading-relaxed bg-primary-light/30 p-6 rounded-xl border border-primary-light">
               <p>
-                Hello! I am a <strong>14-year-old</strong> student from <strong>South Korea</strong>.
+                Hello! I am a <strong className="text-primary-darkest">14-year-old</strong> student from <strong className="text-primary-darkest">South Korea</strong>.
               </p>
               <p>
-                Currently, I am a Freshman at the <strong>International School of Busan</strong>.
+                Currently, I am a Freshman at the <strong className="text-primary-darkest">International School of Busan</strong>.
               </p>
               <p>
                 Welcome to my personal portfolio where I share my journey in finance, business, science, and technology.

@@ -40,6 +40,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Me Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-primary-darkest">
+            About Me
+          </h2>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+
+            {/* Profile Picture Placeholder */}
+            <div className="relative w-48 h-48 flex-shrink-0">
+              {/* 
+                  INSTRUCTIONS FOR USER:
+                  1. Save your photo as "me.jpg" inside the "public/images" folder. 
+                     If the folder doesn't exist, create it.
+                  2. The path will be /images/me.jpg
+               */}
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary-dark shadow-lg bg-gray-200 flex items-center justify-center">
+                <img
+                  src="/images/me.jpg"
+                  alt="Profile Picture (Save your photo to public/images/me.jpg)"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Bio Details */}
+            <div className="max-w-lg text-lg text-primary-darkest space-y-4">
+              <p>
+                Hello! I am a <strong>14-year-old</strong> student from <strong>South Korea</strong>.
+              </p>
+              <p>
+                Currently, I am a Freshman at the <strong>International School of Busan</strong>.
+              </p>
+              <p>
+                Welcome to my personal portfolio where I share my journey in finance, business, science, and technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sections Grid */}
       <section className="py-16" style={{ backgroundColor: '#FFFFE3' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

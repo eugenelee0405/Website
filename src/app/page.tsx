@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center bg-primary-light">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center bg-primary-dark">
         <div className="max-w-4xl w-full bg-white/90 backdrop-blur-sm shadow-xl rounded-2xl p-12 text-center border border-primary-medium">
           {/* Name */}
           <h1 className="text-7xl md:text-8xl font-bold text-primary-darkest mb-6 tracking-tight">

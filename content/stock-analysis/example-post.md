@@ -1,8 +1,8 @@
 ---
-title: "Example Stock Analysis: Tech Company XYZ"
+title: "Equity Research: Eli Lilly (LLY)"
 date: "2024-01-15"
 rating: "Buy"
-excerpt: "A comprehensive analysis of Tech Company XYZ showing strong fundamentals and growth potential."
+excerpt: "In-depth equity research on Eli Lilly with a Buy rating. Analysis covers the commercial success of Mounjaro and Zepbound in the GLP-1 market, strong fundamentals, and key valuation risks to monitor."
 ---
 
 # Tech Company XYZ Analysis

@@ -1,29 +1,30 @@
 import Link from 'next/link';
+import { TrendingUp, Briefcase, Activity, Code } from 'lucide-react';
 
 const sections = [
   {
     title: 'Stock Analysis',
-    description: 'In-depth analysis and reports on stocks with Buy, Sell, or Hold ratings.',
+    description: 'Deep dive equity research and Buy/Sell ratings.',
     href: '/stock-analysis',
-    color: 'bg-primary-dark',
+    icon: TrendingUp,
   },
   {
     title: 'Entrepreneurship',
-    description: 'Documenting the journey of building a business with a Business Model Canvas.',
+    description: 'Business models and startup ventures.',
     href: '/entrepreneurship',
-    color: 'bg-primary-dark',
+    icon: Briefcase,
   },
   {
     title: 'Sports Medicine',
-    description: 'Research-focused articles and deep-dive analysis in sports medicine.',
+    description: 'Research articles and scientific reviews.',
     href: '/sports-medicine',
-    color: 'bg-primary-dark',
+    icon: Activity,
   },
   {
     title: 'Tech Consulting',
-    description: 'PC building guidance, electronics recommendations, and custom build requests.',
+    description: 'Custom builds and software solutions.',
     href: '/tech-consulting',
-    color: 'bg-primary-dark',
+    icon: Code,
   },
 ];
 
@@ -81,23 +82,28 @@ export default function Home() {
             Explore My Work
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {sections.map((section) => (
-              <Link
-                key={section.href}
-                href={section.href}
-                className="block rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
-              >
-                <div className={`h-2 ${section.color}`}></div>
-                <div className="p-6 rounded-lg bg-white">
-                  <h3 className="text-2xl font-bold mb-3 text-primary-darkest">
-                    {section.title}
-                  </h3>
-                  <p className="text-primary-darkest">
-                    {section.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
+            {sections.map((section) => {
+              const Icon = section.icon;
+              return (
+                <Link
+                  key={section.href}
+                  href={section.href}
+                  className="group block bg-white rounded-xl border border-primary-light shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+                >
+                  <div className="p-8 h-full flex flex-col items-start">
+                    <div className="mb-4 text-primary-darkest group-hover:scale-110 transition-transform duration-300">
+                      <Icon size={40} strokeWidth={1.5} />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3 text-primary-darkest">
+                      {section.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {section.description}
+                    </p>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

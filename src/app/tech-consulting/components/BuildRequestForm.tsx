@@ -55,7 +55,7 @@ export default function BuildRequestForm() {
   };
 
   return (
-    <div className="rounded-lg shadow-md p-8" style={{ backgroundColor: '#FFFFE3' }}>
+    <div className="rounded-lg shadow-md p-8" style={{ backgroundColor: '#EDE8D0' }}>
       <h2 className="text-2xl font-bold text-primary-darkest mb-6">
         Request a Build
       </h2>

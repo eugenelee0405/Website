@@ -6,7 +6,7 @@ import path from 'path';
 
 function getGalleryItems(): BuildGalleryItem[] {
   const galleryPath = path.join(process.cwd(), 'content', 'tech-consulting', 'gallery.json');
-  
+
   if (!fs.existsSync(galleryPath)) {
     return [];
   }
@@ -23,7 +23,7 @@ export default function TechConsultingPage() {
   const galleryItems = getGalleryItems();
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFFE3' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#EDE8D0' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-primary-darkest mb-4">
@@ -38,37 +38,37 @@ export default function TechConsultingPage() {
           <div>
             <BuildRequestForm />
           </div>
-          <div className="rounded-lg shadow-md p-8" style={{ backgroundColor: '#FFFFE3' }}>
-          <h2 className="text-2xl font-bold text-primary-darkest mb-4">
-            What I Offer
-          </h2>
-          <ul className="space-y-3 text-primary-darkest">
-            <li className="flex items-start">
-              <span className="mr-2 text-primary-dark">✓</span>
-              <span>Custom PC build recommendations tailored to your budget and needs</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-primary-dark">✓</span>
-              <span>Electronics selection guidance (monitors, peripherals, etc.)</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-primary-dark">✓</span>
-              <span>Performance optimization advice</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2 text-primary-dark">✓</span>
-              <span>Compatibility checking and troubleshooting</span>
-            </li>
-          </ul>
+          <div className="rounded-lg shadow-md p-8" style={{ backgroundColor: '#EDE8D0' }}>
+            <h2 className="text-2xl font-bold text-primary-darkest mb-4">
+              What I Offer
+            </h2>
+            <ul className="space-y-3 text-primary-darkest">
+              <li className="flex items-start">
+                <span className="mr-2 text-primary-dark">✓</span>
+                <span>Custom PC build recommendations tailored to your budget and needs</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-primary-dark">✓</span>
+                <span>Electronics selection guidance (monitors, peripherals, etc.)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-primary-dark">✓</span>
+                <span>Performance optimization advice</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2 text-primary-dark">✓</span>
+                <span>Compatibility checking and troubleshooting</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h2 className="text-3xl font-bold text-primary-darkest mb-6">
-          Previous Builds & Recommendations
-        </h2>
-        <Gallery items={galleryItems} />
-      </div>
+        <div>
+          <h2 className="text-3xl font-bold text-primary-darkest mb-6">
+            Previous Builds & Recommendations
+          </h2>
+          <Gallery items={galleryItems} />
+        </div>
       </div>
     </div>
   );

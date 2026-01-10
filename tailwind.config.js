@@ -16,6 +16,7 @@ module.exports = {
           dark: '#4F7C82',
           darkest: '#0B2E33',
         },
+        'custom-cream': '#EDE8D0',
       },
       fontFamily: {
         sans: [

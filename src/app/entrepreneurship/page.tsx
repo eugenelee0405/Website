@@ -51,7 +51,7 @@ const canvasData: BusinessModelCanvasType = {
 
 export default function EntrepreneurshipPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFFE3' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#EDE8D0' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-primary-darkest mb-4">
@@ -62,20 +62,20 @@ export default function EntrepreneurshipPage() {
           </p>
         </div>
 
-        <div className="rounded-lg p-6 mb-8" style={{ backgroundColor: '#FFFFE3' }}>
+        <div className="rounded-lg p-6 mb-8" style={{ backgroundColor: '#EDE8D0' }}>
           <BusinessModelCanvas data={canvasData} />
         </div>
 
-        <div className="rounded-lg shadow-md p-6" style={{ backgroundColor: '#FFFFE3' }}>
-        <h2 className="text-2xl font-bold text-primary-darkest mb-4">
-          About This Canvas
-        </h2>
-        <p className="text-primary-darkest">
-          This Business Model Canvas visualizes the key components of the business model,
-          including value propositions, customer segments, revenue streams, and more.
-          The canvas is a living document that evolves as the business grows and learns.
-        </p>
-      </div>
+        <div className="rounded-lg shadow-md p-6" style={{ backgroundColor: '#EDE8D0' }}>
+          <h2 className="text-2xl font-bold text-primary-darkest mb-4">
+            About This Canvas
+          </h2>
+          <p className="text-primary-darkest">
+            This Business Model Canvas visualizes the key components of the business model,
+            including value propositions, customer segments, revenue streams, and more.
+            The canvas is a living document that evolves as the business grows and learns.
+          </p>
+        </div>
       </div>
     </div>
   );

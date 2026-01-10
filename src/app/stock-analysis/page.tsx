@@ -7,7 +7,7 @@ export default function StockAnalysisPage() {
   const posts = getStockPosts();
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#EDE8D0' }}>
+    <div className="min-h-screen bg-primary-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-primary-darkest mb-4">
@@ -19,7 +19,7 @@ export default function StockAnalysisPage() {
         </div>
 
         {posts.length === 0 ? (
-          <div className="rounded-lg shadow p-8 text-center" style={{ backgroundColor: '#EDE8D0' }}>
+          <div className="rounded-lg shadow p-8 text-center bg-primary-light">
             <p className="text-primary-darkest">
               No reports available yet. Check back soon!
             </p>
@@ -30,8 +30,7 @@ export default function StockAnalysisPage() {
               <Link
                 key={post.slug}
                 href={`/stock-analysis/${post.slug}`}
-                className="block rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow bg-custom-cream"
-                style={{ backgroundColor: '#EDE8D0' }}
+                className="block rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow bg-white"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex-1">

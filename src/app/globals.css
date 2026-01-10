@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #B8E3E9;
-  --foreground: #0B2E33;
+  --background: #CAF0F8;
+  --foreground: #023E8A;
 }
 
 body {
@@ -49,4 +49,3 @@ body {
 .prose ol {
   color: #0B2E33;
 }
-

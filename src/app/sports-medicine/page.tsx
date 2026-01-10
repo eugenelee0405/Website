@@ -6,7 +6,7 @@ export default function SportsMedicinePage() {
   const articles = getResearchArticles();
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#EDE8D0' }}>
+    <div className="min-h-screen bg-primary-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-primary-darkest mb-4">
@@ -18,7 +18,7 @@ export default function SportsMedicinePage() {
         </div>
 
         {articles.length === 0 ? (
-          <div className="rounded-lg shadow p-8 text-center" style={{ backgroundColor: '#EDE8D0' }}>
+          <div className="rounded-lg shadow p-8 text-center bg-white">
             <p className="text-primary-darkest">
               No articles yet. Check back soon for research publications!
             </p>
@@ -29,8 +29,7 @@ export default function SportsMedicinePage() {
               <Link
                 key={article.slug}
                 href={`/sports-medicine/${article.slug}`}
-                className="block rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow"
-                style={{ backgroundColor: '#EDE8D0' }}
+                className="block rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow bg-white"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex-1">

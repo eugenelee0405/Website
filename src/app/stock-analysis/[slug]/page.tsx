@@ -26,7 +26,7 @@ export default async function StockPostPage({
   const isPdfPost = post.slug === 'example-post';
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#EDE8D0' }}>
+    <div className="min-h-screen bg-primary-light">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link
           href="/stock-analysis"
@@ -35,7 +35,7 @@ export default async function StockPostPage({
           ← Back to Stock Analysis
         </Link>
 
-        <article className="rounded-lg shadow-lg p-8" style={{ backgroundColor: '#EDE8D0' }}>
+        <article className="rounded-lg shadow-lg p-8 bg-white">
           <div className="flex items-center justify-between mb-6">
             <RatingBadge rating={post.rating} />
             <span className="text-sm text-primary-darkest">

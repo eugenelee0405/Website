@@ -23,7 +23,7 @@ export default function TechConsultingPage() {
   const galleryItems = getGalleryItems();
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#EDE8D0' }}>
+    <div className="min-h-screen bg-primary-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-primary-darkest mb-4">
@@ -38,7 +38,7 @@ export default function TechConsultingPage() {
           <div>
             <BuildRequestForm />
           </div>
-          <div className="rounded-lg shadow-md p-8" style={{ backgroundColor: '#EDE8D0' }}>
+          <div className="rounded-lg shadow-md p-8 bg-white">
             <h2 className="text-2xl font-bold text-primary-darkest mb-4">
               What I Offer
             </h2>

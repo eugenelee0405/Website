@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* Sections Grid */}
-      <section className="py-16" style={{ backgroundColor: '#EDE8D0' }}>
+      <section className="py-16 bg-primary-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12 text-primary-darkest">
             Explore My Work
@@ -95,7 +95,7 @@ export default function Home() {
                 className="block rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
               >
                 <div className={`h-2 ${section.color}`}></div>
-                <div className="p-6 rounded-lg" style={{ backgroundColor: '#EDE8D0' }}>
+                <div className="p-6 rounded-lg bg-white">
                   <h3 className="text-2xl font-bold mb-3 text-primary-darkest">
                     {section.title}
                   </h3>

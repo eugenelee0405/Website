@@ -13,7 +13,7 @@ export default function Gallery({ items }: GalleryProps) {
 
   if (items.length === 0) {
     return (
-      <div className="rounded-lg shadow-md p-8 text-center" style={{ backgroundColor: '#EDE8D0' }}>
+      <div className="rounded-lg shadow-md p-8 text-center bg-white">
         <p className="text-primary-darkest">
           No builds to display yet. Check back soon!
         </p>
@@ -28,8 +28,7 @@ export default function Gallery({ items }: GalleryProps) {
           <div
             key={item.id}
             onClick={() => setSelectedItem(item)}
-            className="rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
-            style={{ backgroundColor: '#EDE8D0' }}
+            className="rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow bg-white"
           >
             <div className="aspect-video bg-primary-medium flex items-center justify-center">
               {item.image ? (
@@ -74,8 +73,7 @@ export default function Gallery({ items }: GalleryProps) {
           onClick={() => setSelectedItem(null)}
         >
           <div
-            className="rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
-            style={{ backgroundColor: '#EDE8D0' }}
+            className="rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto bg-white"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6">

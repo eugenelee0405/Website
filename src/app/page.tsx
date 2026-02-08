@@ -54,7 +54,7 @@ export default function Home() {
         <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
             <h1 className="text-3xl font-bold text-primary-darkest tracking-tight">Dashboard</h1>
-            <p className="text-primary-dark text-sm mt-1">Welcome back, exploring Eugene's Portfolio.</p>
+            <p className="text-primary-dark text-sm mt-1">Welcome back, exploring Eugene&apos;s Portfolio.</p>
           </div>
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-white rounded-lg border border-primary-medium/30 text-sm text-primary-dark">

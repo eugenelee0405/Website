@@ -40,6 +40,11 @@ const sections = [
   },
 ];
 
+export const metadata = {
+  title: 'Dashboard | Eugene Lee',
+  description: 'Personal portfolio dashboard and navigation.',
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-primary-light/30 p-4 sm:p-6 lg:p-8 font-sans">

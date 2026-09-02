@@ -29,6 +29,7 @@ export function getStockPosts(): StockPost[] {
         date: data.date || '',
         rating: data.rating || 'Hold',
         excerpt: data.excerpt || '',
+        pdfPath: data.pdfPath || undefined,
         content,
       } as StockPost;
     });
@@ -59,6 +60,7 @@ export function getStockPost(slug: string): StockPost | null {
     date: data.date || '',
     rating: data.rating || 'Hold',
     excerpt: data.excerpt || '',
+    pdfPath: data.pdfPath || undefined,
     content,
   } as StockPost;
 }
@@ -148,4 +150,3 @@ export async function getResearchArticleWithHtml(slug: string): Promise<Research
     contentHtml,
   };
 }
-

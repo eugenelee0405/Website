@@ -10,6 +10,9 @@
     "export": "next build"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^3.0.29",
+    "@ai-sdk/react": "^3.0.88",
+    "ai": "^6.0.86",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.562.0",
@@ -17,7 +20,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",

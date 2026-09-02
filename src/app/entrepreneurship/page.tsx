@@ -1,83 +1,53 @@
 import BusinessModelCanvas from '@/components/BusinessModelCanvas';
 import { BusinessModelCanvas as BusinessModelCanvasType } from '@/lib/types';
+import PageHeader from '@/components/PageHeader';
+import Reveal from '@/components/Reveal';
 
-// This data can be moved to a JSON file or CMS later
+export const metadata = {
+  title: 'Entrepreneurship | Eugene Lee',
+  description: 'Building a venture in the open with the Business Model Canvas.',
+};
+
+// This data can be moved to a JSON file or CMS later.
 const canvasData: BusinessModelCanvasType = {
-  keyPartners: [
-    'Strategic suppliers',
-    'Technology partners',
-    'Distribution networks',
-  ],
-  keyActivities: [
-    'Product development',
-    'Marketing and sales',
-    'Customer support',
-  ],
-  keyResources: [
-    'Team expertise',
-    'Technology infrastructure',
-    'Brand reputation',
-  ],
-  valuePropositions: [
-    'Unique solution to customer problem',
-    'Superior quality and service',
-    'Competitive pricing',
-  ],
-  customerRelationships: [
-    'Personal assistance',
-    'Self-service platform',
-    'Community building',
-  ],
-  channels: [
-    'Online platform',
-    'Direct sales',
-    'Partner channels',
-  ],
-  customerSegments: [
-    'Target market segment 1',
-    'Target market segment 2',
-  ],
-  costStructure: [
-    'Development costs',
-    'Marketing expenses',
-    'Operational overhead',
-  ],
-  revenueStreams: [
-    'Product sales',
-    'Subscription fees',
-    'Service revenue',
-  ],
+  keyPartners: ['Strategic suppliers', 'Technology partners', 'Distribution networks'],
+  keyActivities: ['Product development', 'Marketing and sales', 'Customer support'],
+  keyResources: ['Team expertise', 'Technology infrastructure', 'Brand reputation'],
+  valuePropositions: ['A unique solution to a real problem', 'Superior quality and service', 'Competitive pricing'],
+  customerRelationships: ['Personal assistance', 'Self-service platform', 'Community building'],
+  channels: ['Online platform', 'Direct sales', 'Partner channels'],
+  customerSegments: ['Target segment one', 'Target segment two'],
+  costStructure: ['Development costs', 'Marketing expenses', 'Operational overhead'],
+  revenueStreams: ['Product sales', 'Subscription fees', 'Service revenue'],
 };
 
 export default function EntrepreneurshipPage() {
   return (
-    <div className="min-h-screen bg-primary-light">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-primary-darkest mb-4">
-            Entrepreneurship Journey
-          </h1>
-          <p className="text-lg text-primary-darkest">
-            Documenting the process of building a business using the Business Model Canvas framework.
-          </p>
-        </div>
+    <div>
+      <PageHeader
+        index="02"
+        eyebrow="Entrepreneurship"
+        title="Building a venture, one block at a time."
+        lead="A living Business Model Canvas that maps how the idea creates, delivers, and captures value. It changes as the venture learns."
+      />
 
-        <div className="rounded-lg p-6 mb-8 bg-white">
+      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+        <Reveal>
           <BusinessModelCanvas data={canvasData} />
-        </div>
+        </Reveal>
 
-        <div className="rounded-lg shadow-md p-6 bg-white">
-          <h2 className="text-2xl font-bold text-primary-darkest mb-4">
-            About This Canvas
-          </h2>
-          <p className="text-primary-darkest">
-            This Business Model Canvas visualizes the key components of the business model,
-            including value propositions, customer segments, revenue streams, and more.
-            The canvas is a living document that evolves as the business grows and learns.
-          </p>
-        </div>
-      </div>
+        <Reveal className="mt-14 grid grid-cols-1 gap-10 border-t border-line pt-12 md:grid-cols-[auto_1fr] md:gap-16">
+          <p className="eyebrow md:pt-1">On the canvas</p>
+          <div className="max-w-2xl">
+            <p className="font-serif text-xl leading-relaxed text-ink-soft text-pretty sm:text-2xl sm:leading-relaxed">
+              The Business Model Canvas is a one-page view of a whole company. It
+              forces every assumption into the open: who it serves, what it
+              promises, how the money moves. Treating it as a draft, not a
+              monument, is the point.
+            </p>
+          </div>
+        </Reveal>
+      </section>
     </div>
   );
 }
-

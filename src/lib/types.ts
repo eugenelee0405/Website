@@ -6,6 +6,7 @@ export interface StockPost {
   date: string;
   rating: Rating;
   excerpt: string;
+  pdfPath?: string;
   content: string;
 }
 
@@ -40,4 +41,3 @@ export interface BusinessModelCanvas {
   costStructure: string[];
   revenueStreams: string[];
 }
-

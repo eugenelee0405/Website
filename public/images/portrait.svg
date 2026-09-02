@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="ptitle pdesc">
+  <title id="ptitle">Portrait placeholder</title>
+  <desc id="pdesc">Editorial portrait placeholder with the monogram E L.</desc>
+  <rect width="800" height="1000" fill="#EEEAE1" />
+  <rect x="24" y="24" width="752" height="952" fill="none" stroke="#DBD6CA" stroke-width="1.5" />
+  <!-- soft shoulders + head silhouette -->
+  <g fill="#DDD7CA">
+    <circle cx="400" cy="410" r="150" />
+    <path d="M150 900c0-150 112-250 250-250s250 100 250 250v40H150z" />
+  </g>
+  <text x="400" y="545" text-anchor="middle" fill="#B7AF9E" font-size="150" font-family="Georgia, 'Times New Roman', serif" font-style="italic">EL</text>
+  <text x="400" y="948" text-anchor="middle" fill="#9C9482" font-size="22" letter-spacing="6" font-family="Arial, sans-serif">REPLACE WITH PHOTO</text>
+</svg>
